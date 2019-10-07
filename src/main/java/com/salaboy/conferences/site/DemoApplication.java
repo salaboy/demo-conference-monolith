@@ -28,8 +28,8 @@ class ConferenceSiteController {
     @GetMapping("/")
     public String index(Model model) {
 
-        String agendaString = "Here goes the Agenda Section";
-        String cp4String = "Here goes the C4P Section";
+        String agendaString = "Agenda Section";
+        String cp4String = "C4P Section";
 
         model.addAttribute("version", version);
         model.addAttribute("c4p", cp4String);

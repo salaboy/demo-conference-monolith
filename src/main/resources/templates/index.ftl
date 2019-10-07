@@ -27,13 +27,13 @@
 <div class="block conference">
     <div class="container">
         <h1>Monolith Conference</h1>
-        <h2>Conference V<#if version??>${version}</#if> - Monolith</h2>
+        <#if version??><h2>V${version}</h2></#if>
     </div>
 </div>
 <div class="bottom-blocks">
     <div class="block block-left">
         <div class="container">
-            <h2>C4P banner: <br/>${c4p}</h2>
+            <h2>${c4p}</h2>
             <ul>
                 <li>New Proposal</li>
                 <li>Rank Proposal (Back office)</li>
@@ -44,7 +44,7 @@
     </div>
     <div class="block block-right">
         <div class="container">
-            <h2>Agenda Banner: <br/>${agenda}</h2>
+            <h2>${agenda}</h2>
             <ul>
                 <li>Some Real interesting talk here</li>
                 <li>New Framework talk here</li>
