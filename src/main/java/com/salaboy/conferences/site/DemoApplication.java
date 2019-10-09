@@ -22,7 +22,7 @@ public class DemoApplication {
 
 @Controller
 class ConferenceSiteController {
-    @Value("${version:0}")
+    @Value("${version:0.0.0}")
     private String version;
 
     @GetMapping("/")
