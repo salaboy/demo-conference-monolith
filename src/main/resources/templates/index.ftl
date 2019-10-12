@@ -28,6 +28,7 @@
     <div class="container">
         <h1>Monolith Conference</h1>
         <#if version??><h2>V${version}</h2></#if>
+        <h4>(Email Module included)</h4>
     </div>
 </div>
 <div class="bottom-blocks">
@@ -36,9 +37,8 @@
             <h2>${c4p}</h2>
             <ul>
                 <li>New Proposal</li>
-                <li>Rank Proposal (Back office)</li>
                 <li>Approve/Reject Proposal (Back office)</li>
-                <li>Notify Author about Results (Back office)</li>
+                <li>Notify Author about Results via email (Back office)</li>
             </ul>
         </div>
     </div>
@@ -59,13 +59,6 @@
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
-
-<script>
-    var button = document.querySelector('form[name="c4pform"] > button');
-    button.addEventListener(function() {
-        document.querySelector("form[name="c4pform"]").submit();
-    });
-</script>
 
 </body>
 
