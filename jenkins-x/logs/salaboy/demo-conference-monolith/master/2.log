@@ -1,32 +1,32 @@
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-j88v4[0m
-{"level":"warn","ts":1575557698.5571458,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1575557698.5579162,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-credential-initializer-7jdqv[0m
+{"level":"warn","ts":1575659054.317902,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1575659054.3187883,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-56qxw[0m
-{"level":"warn","ts":1575557699.5839124,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1575557699.585561,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-working-dir-initializer-vq5lr[0m
+{"level":"warn","ts":1575659055.9535944,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1575659055.9550703,"logger":"fallback-logger","caller":"bash/main.go:65","msg":"Successfully executed command \"mkdir -p /workspace/source\""}
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-monolit-lm4h7[0m
-{"level":"warn","ts":1575557708.6043284,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1575557710.0296085,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-monolith.git @ v0.0.31 in path /workspace/source"}
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-salaboy-demo-conference-monolit-8bjvn[0m
+{"level":"warn","ts":1575659065.129131,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/master\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1575659066.530546,"logger":"fallback-logger","caller":"git/git.go:102","msg":"Successfully cloned https://github.com/*******/demo-conference-monolith.git @ v0.0.33 in path /workspace/source"}
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
-Using SHAs from PULL_REFS=master:f3993d2d5cb4dc73a83757587fd5682a317c6ea0
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:9887b24f5c1334d8ace7fead7564547dd5b5fdcc
 WARNING: no SHAs to merge, falling back to initial cloned commit
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
 Generated Git credentials file /workspace/xdg_config/git/credentials
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-mvn-deploy[0m
 Picked up _JAVA_OPTIONS: -XX:+UnlockExperimentalVMOptions -XX:+UseCGroupMemoryLimitForHeap -Dsun.zip.disableMemoryMapping=true -XX:+UseParallelGC -XX:MinHeapFreeRatio=5 -XX:MaxHeapFreeRatio=10 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Xms10m -Xmx192m
 OpenJDK 64-Bit Server VM warning: If the number of processors is expected to increase from one, then you should configure the number of parallel GC threads appropriately using -XX:ParallelGCThreads=N
 [INFO] Scanning for projects...
 [INFO] 
 [INFO] ----------< com.*******.conferences:demo-conference-monolith >----------
-[INFO] Building Site 0.0.31
+[INFO] Building Site 0.0.33
 [INFO] --------------------------------[ jar ]---------------------------------
 [INFO] 
 [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ demo-conference-monolith ---
@@ -54,35 +54,35 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO]  T E S T S
 [INFO] -------------------------------------------------------
 [INFO] Running com.*******.conferences.site.DemoApplicationTests
-14:55:36.350 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.site.DemoApplicationTests]
-14:55:36.371 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-14:55:36.387 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-14:55:36.479 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.site.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
-14:55:36.559 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.site.DemoApplicationTests], using SpringBootContextLoader
-14:55:36.570 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.site.DemoApplicationTests]: class path resource [com/*******/conferences/site/DemoApplicationTests-context.xml] does not exist
-14:55:36.572 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.site.DemoApplicationTests]: class path resource [com/*******/conferences/site/DemoApplicationTestsContext.groovy] does not exist
-14:55:36.572 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.site.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
-14:55:36.575 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.site.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-14:55:36.763 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.073 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/site/DemoApplication.class]
-14:55:37.076 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.site.DemoApplication for test class com.*******.conferences.site.DemoApplicationTests
-14:55:37.388 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.site.DemoApplicationTests]: using defaults.
-14:55:37.390 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-14:55:37.458 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
-14:55:37.465 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
-14:55:37.468 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
-14:55:37.471 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50eac852, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@16ec5519, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f7298b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@188715b5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ea9f6af, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a192cfe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5119fb47, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7193666c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20deea7f]
-14:55:37.476 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.477 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.482 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.485 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.486 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.486 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.503 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.site.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
-14:55:37.506 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.509 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
-14:55:37.558 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = com.*******.conferences.site.DemoApplicationTests@359f7cdf, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.site.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
-14:55:37.670 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+19:04:55.634 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.*******.conferences.site.DemoApplicationTests]
+19:04:55.642 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:04:55.653 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:04:55.746 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.*******.conferences.site.DemoApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:04:55.769 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.*******.conferences.site.DemoApplicationTests], using SpringBootContextLoader
+19:04:55.778 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.site.DemoApplicationTests]: class path resource [com/*******/conferences/site/DemoApplicationTests-context.xml] does not exist
+19:04:55.779 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.*******.conferences.site.DemoApplicationTests]: class path resource [com/*******/conferences/site/DemoApplicationTestsContext.groovy] does not exist
+19:04:55.780 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.*******.conferences.site.DemoApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:04:55.783 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.*******.conferences.site.DemoApplicationTests]: DemoApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:04:55.976 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.269 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/workspace/source/target/classes/com/*******/conferences/site/DemoApplication.class]
+19:04:56.273 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.*******.conferences.site.DemoApplication for test class com.*******.conferences.site.DemoApplicationTests
+19:04:56.722 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.*******.conferences.site.DemoApplicationTests]: using defaults.
+19:04:56.730 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:04:56.757 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [javax/servlet/ServletContext]
+19:04:56.770 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/TransactionDefinition]
+19:04:56.777 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Skipping candidate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener] due to a missing dependency. Specify custom listener classes or make the default listener classes and their required dependencies available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+19:04:56.825 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@50eac852, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@16ec5519, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2f7298b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@188715b5, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1ea9f6af, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6a192cfe, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@5119fb47, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@7193666c, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@20deea7f]
+19:04:56.832 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.838 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.843 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.848 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.852 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.855 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.865 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.site.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]], class annotated with @DirtiesContext [false] with mode [null].
+19:04:56.869 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.869 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.*******.conferences.site.DemoApplicationTests]
+19:04:56.875 [main] DEBUG org.springframework.test.context.support.DependencyInjectionTestExecutionListener - Performing dependency injection for test context [[DefaultTestContext@1a451d4d testClass = DemoApplicationTests, testInstance = com.*******.conferences.site.DemoApplicationTests@359f7cdf, testMethod = [null], testException = [null], mergedContextConfiguration = [ReactiveWebMergedContextConfiguration@7fa98a66 testClass = DemoApplicationTests, locations = '{}', classes = '{class com.*******.conferences.site.DemoApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@27a8c74e, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@646d64ab, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@2f943d71, org.springframework.boot.test.web.reactive.server.WebTestClientContextCustomizer@2a742aa2, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@2c039ac6], contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map[[empty]]]].
+19:04:56.936 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -92,11 +92,11 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v2.1.9.RELEASE)
 
-2019-12-05 14:55:38.774  INFO 72 --- [           main] c.s.c.site.DemoApplicationTests          : Starting DemoApplicationTests on *******-demo-conference-monolit-ms6ct-2-from-build-pack-2gvng-p with PID 72 (started by root in /workspace/source)
-2019-12-05 14:55:38.782  INFO 72 --- [           main] c.s.c.site.DemoApplicationTests          : No active profile set, falling back to default profiles: default
-2019-12-05 14:55:49.258  INFO 72 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
-2019-12-05 14:55:51.700  INFO 72 --- [           main] c.s.c.site.DemoApplicationTests          : Started DemoApplicationTests in 14.018 seconds (JVM running for 16.945)
-[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.576 s - in com.*******.conferences.site.DemoApplicationTests
+2019-12-06 19:04:57.926  INFO 70 --- [           main] c.s.c.site.DemoApplicationTests          : Starting DemoApplicationTests on *******-demo-conference-monolit-26cc8-2-from-build-pack-ttjmh-p with PID 70 (started by root in /workspace/source)
+2019-12-06 19:04:57.934  INFO 70 --- [           main] c.s.c.site.DemoApplicationTests          : No active profile set, falling back to default profiles: default
+2019-12-06 19:05:08.836  INFO 70 --- [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-12-06 19:05:11.533  INFO 70 --- [           main] c.s.c.site.DemoApplicationTests          : Started DemoApplicationTests in 14.588 seconds (JVM running for 17.283)
+[INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.992 s - in com.*******.conferences.site.DemoApplicationTests
 [INFO] 
 [INFO] Results:
 [INFO] 
@@ -104,39 +104,39 @@ OpenJDK 64-Bit Server VM warning: If the number of processors is expected to inc
 [INFO] 
 [INFO] 
 [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ demo-conference-monolith ---
-[INFO] Building jar: /workspace/source/target/demo-conference-monolith-0.0.31.jar
+[INFO] Building jar: /workspace/source/target/demo-conference-monolith-0.0.33.jar
 [INFO] 
 [INFO] --- spring-boot-maven-plugin:2.1.9.RELEASE:repackage (repackage) @ demo-conference-monolith ---
 [INFO] Replacing main artifact with repackaged archive
 [INFO] 
 [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ demo-conference-monolith ---
-[INFO] Installing /workspace/source/target/demo-conference-monolith-0.0.31.jar to /home/jenkins/.mvnrepository/com/*******/conferences/demo-conference-monolith/0.0.31/demo-conference-monolith-0.0.31.jar
-[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/demo-conference-monolith/0.0.31/demo-conference-monolith-0.0.31.pom
+[INFO] Installing /workspace/source/target/demo-conference-monolith-0.0.33.jar to /home/jenkins/.mvnrepository/com/*******/conferences/demo-conference-monolith/0.0.33/demo-conference-monolith-0.0.33.jar
+[INFO] Installing /workspace/source/pom.xml to /home/jenkins/.mvnrepository/com/*******/conferences/demo-conference-monolith/0.0.33/demo-conference-monolith-0.0.33.pom
 [INFO] 
 [INFO] --- maven-deploy-plugin:2.8.2:deploy (default-deploy) @ demo-conference-monolith ---
 [INFO] Using alternate deployment repository local-nexus::default::http://nexus/repository/maven-releases/
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  47.255 s
-[INFO] Finished at: 2019-12-05T14:56:01Z
+[INFO] Total time:  48.143 s
+[INFO] Finished at: 2019-12-06T19:05:20Z
 [INFO] ------------------------------------------------------------------------
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-skaffold-version[0m
 v1.0.0
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
 [36mINFO[0m[0000] Downloading base image openjdk:8-jdk-slim    
-ERROR: logging before flag.Parse: E1205 14:56:02.967541       9 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
-ERROR: logging before flag.Parse: E1205 14:56:02.971998       9 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
-2019/12/05 14:56:02 No matching credentials were found, falling back on anonymous
+ERROR: logging before flag.Parse: E1206 19:05:21.403740       9 metadata.go:142] while reading 'google-dockercfg' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg
+ERROR: logging before flag.Parse: E1206 19:05:21.407588       9 metadata.go:159] while reading 'google-dockercfg-url' metadata: http status code: 404 while fetching url http://metadata.google.internal./computeMetadata/v1/instance/attributes/google-dockercfg-url
+2019/12/06 19:05:21 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0001] Error while retrieving image from cache: getting file info: stat /workspace/sha256:c97eb5f626198602270d17adebaf19b7ab1080db65263107efbb95efee3fefe0: no such file or directory 
 [36mINFO[0m[0001] Downloading base image openjdk:8-jdk-slim    
-2019/12/05 14:56:04 No matching credentials were found, falling back on anonymous
+2019/12/06 19:05:22 No matching credentials were found, falling back on anonymous
 [36mINFO[0m[0002] cmd: EXPOSE                                  
 [36mINFO[0m[0002] Adding exposed port: 8080/tcp                
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/demo-conference-monolith-0.0.31.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/demo-conference-monolith-0.0.33.jar] 
 [36mINFO[0m[0002] Skipping unpacking as no commands require it. 
 [36mINFO[0m[0002] Taking snapshot of full filesystem...        
 [36mINFO[0m[0002] ENV PORT 8080                                
@@ -150,7 +150,7 @@ ERROR: logging before flag.Parse: E1205 14:56:02.971998       9 metadata.go:159]
 [36mINFO[0m[0002] Using files from context: [/workspace/source/pom.xml] 
 [36mINFO[0m[0002] COPY pom.xml target/lib* /opt/lib/           
 [36mINFO[0m[0002] Taking snapshot of files...                  
-[36mINFO[0m[0002] Using files from context: [/workspace/source/target/demo-conference-monolith-0.0.31.jar] 
+[36mINFO[0m[0002] Using files from context: [/workspace/source/target/demo-conference-monolith-0.0.33.jar] 
 [36mINFO[0m[0002] COPY target/*.jar /opt/app.jar               
 [36mINFO[0m[0002] Taking snapshot of files...                  
 [36mINFO[0m[0002] WORKDIR /opt                                 
@@ -159,59 +159,55 @@ ERROR: logging before flag.Parse: E1205 14:56:02.971998       9 metadata.go:159]
 [36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
 [36mINFO[0m[0002] CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "app.jar"] 
 [36mINFO[0m[0002] No files changed in this command, skipping snapshotting. 
-2019/12/05 14:56:06 existing blob: sha256:c5943b75c9747aebea25c3fc4bf3d4b4247101176b78ada93d08446dd33f94a0
-2019/12/05 14:56:06 existing blob: sha256:c2a806caa98c159f2c9254dabd60e04352b5c8b46d2e6cc9bd8f7bfc037a4e0b
-2019/12/05 14:56:06 existing blob: sha256:2f1dc2bdcfe193ce54affa45170354ca76667c40f8cf536b6282dd379e17e24a
-2019/12/05 14:56:06 existing blob: sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c
-2019/12/05 14:56:09 pushed blob: sha256:21d406f73b079d14d739acca37e50c6c6ad2bb9f0a1e0aea79219de78ac7b3c7
-2019/12/05 14:56:09 pushed blob: sha256:eb90e02692f4ae92017a024b3fcc820d4ea05de62ffa40bb7210bc89b47dc1ec
-2019/12/05 14:56:11 pushed blob: sha256:88ae0d96ab04b036f1b24efe7cfccb95d25812db47ba8f623c015a56b0d2275d
-2019/12/05 14:56:13 gcr.io/camunda-consulting-de/demo-conference-monolith:0.0.31: digest: sha256:587ac00988c5c962dd3301ea7e310e18f97c2a5938d0401b8df236315ac80e27 size: 1244
+2019/12/06 19:05:24 existing blob: sha256:c2a806caa98c159f2c9254dabd60e04352b5c8b46d2e6cc9bd8f7bfc037a4e0b
+2019/12/06 19:05:24 existing blob: sha256:000eee12ec04cc914bf96e8f5dee7767510c2aca3816af6078bd9fbe3150920c
+2019/12/06 19:05:24 existing blob: sha256:2f1dc2bdcfe193ce54affa45170354ca76667c40f8cf536b6282dd379e17e24a
+2019/12/06 19:05:24 existing blob: sha256:c5943b75c9747aebea25c3fc4bf3d4b4247101176b78ada93d08446dd33f94a0
+2019/12/06 19:05:28 pushed blob: sha256:1ab6fbd92f8e2cee37c54822590550954f538ae39ec3ea674afb7b2c9cfdcf56
+2019/12/06 19:05:28 pushed blob: sha256:388fb79ed4f8516ff0eceade85f459c063fc9c2821bcb7812608b03c48b5c795
+2019/12/06 19:05:32 pushed blob: sha256:1a1d171528043f9986f11e3293632195d9f5c6932e7a4c73d9a4ac7a0a0bd37e
+2019/12/06 19:05:33 gcr.io/camunda-consulting-de/demo-conference-monolith:0.0.33: digest: sha256:5583aea70bab37cb977bb5910930c417a183e2b8e9136bd3814f94be6bb18128 size: 1244
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
 no CVE provider running in the current ** namespace so skip adding image to be analysed
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
 Converted /workspace/source/charts/demo-conference-monolith to an unshallow repository
-Generating change log from git ref a1e32e7d4a5cd591f5c42d55e88d55916fab75d2 => 0aaae32f4f45b101abef69c1c3b2c053d80f0e45
-WARNING: No release found for *******/demo-conference-monolith and tag v0.0.31 so creating a new release
-Updated the release information at https://github.com/*******/demo-conference-monolith/releases/tag/v0.0.31
+Generating change log from git ref 2069129a7d24473557e839b90468386bc9282e01 => 0ee7b588df84ef25f5fe27d5a9070d581471c47a
+WARNING: No release found for *******/demo-conference-monolith and tag v0.0.33 so creating a new release
+Updated the release information at https://github.com/*******/demo-conference-monolith/releases/tag/v0.0.33
 generated: /workspace/source/charts/demo-conference-monolith/templates/release.yaml
-Created Release demo-conference-monolith-0-0-31 resource in namespace **
-Updating PipelineActivity *******-demo-conference-monolith-master-2 with version 0.0.31
-Updated PipelineActivities *******-demo-conference-monolith-master-2 with release notes URL: https://github.com/*******/demo-conference-monolith/releases/tag/v0.0.31
+Created Release demo-conference-monolith-0-0-33 resource in namespace **
+Updating PipelineActivity *******-demo-conference-monolith-master-2 with version 0.0.33
+Updated PipelineActivities *******-demo-conference-monolith-master-2 with release notes URL: https://github.com/*******/demo-conference-monolith/releases/tag/v0.0.33
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
 Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
 Successfully added Helm repository storage.googleapis.com.
 Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
 Successfully added Helm repository jenkins-x-chartmuseum.
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Uploading chart file demo-conference-monolith-0.0.31.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Uploading chart file demo-conference-monolith-0.0.33.tgz to http://jenkins-x-chartmuseum:8080/api/charts
 Received 201 response: {"saved":true}
 
-Showing logs for build [32msalaboy-demo-conference-monolit-ms6ct-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+Showing logs for build [32msalaboy-demo-conference-monolit-26cc8-2[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
 WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
 WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
-Promoting app demo-conference-monolith version 0.0.31 to namespace **-staging
-Created Pull Request: https://github.com/*******/environment-webinar-nov-staging/pull/34
-Added label updatebot to Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/34
-WARNING: Failed to query the Pull Request last commit status for https://github.com/*******/environment-webinar-nov-staging/pull/34 ref c3719fad369603b2a9fae082c0add5142f3447c9 Could not find a status for repository *******/environment-webinar-nov-staging with ref c3719fad369603b2a9fae082c0add5142f3447c9
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/34
-WARNING: Failed to merge the Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/34 due to PUT https://api.github.com/repos/*******/environment-webinar-nov-staging/pulls/34/merge: 405 Pull Request is not mergeable [] maybe I don't have karma?
+Promoting app demo-conference-monolith version 0.0.33 to namespace **-staging
+Created Pull Request: https://github.com/*******/environment-webinar-nov-staging/pull/38
+Added label updatebot to Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/38
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/38
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/38
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/38
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/38
 Rebasing PullRequest due to conflict
-Attempting to cherry pick commits that were on promote-demo-conference-monolith-0.0.31 but not yet pushed
+Attempting to cherry pick commits that were on promote-demo-conference-monolith-0.0.33 but not yet pushed
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/38
 Rebasing PullRequest due to conflict
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/38
 Rebasing PullRequest due to conflict
+WARNING: Failed to merge the Pull Request https://github.com/*******/environment-webinar-nov-staging/pull/38 due to PUT https://api.github.com/repos/*******/environment-webinar-nov-staging/pulls/38/merge: 405 Pull Request is not mergeable [] maybe I don't have karma?
 Rebasing PullRequest due to conflict
 Rebasing PullRequest due to conflict
 Rebasing PullRequest due to conflict
@@ -321,51 +317,8 @@ Rebasing PullRequest due to conflict
 Rebasing PullRequest due to conflict
 Rebasing PullRequest due to conflict
 Rebasing PullRequest due to conflict
+got git provider status pending from PR https://github.com/*******/environment-webinar-nov-staging/pull/38
 Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-Rebasing PullRequest due to conflict
-error: Timed out waiting for pull request https://github.com/*******/environment-webinar-nov-staging/pull/34 to merge. Waited 1h0m0s
+error: Pull request https://github.com/*******/environment-webinar-nov-staging/pull/38 last commit has status failure for ref 4abb78f644b01a7248b14caa518fef0996164a85
 [31m
 Pipeline failed on stage 'from-build-pack' : container 'step-promote-jx-promote'. The execution of the pipeline has stopped.[0m
